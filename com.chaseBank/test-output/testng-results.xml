@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-29T16:09:40 EDT" name="Default suite" finished-at="2021-03-29T16:10:58 EDT" duration-ms="77677">
+    <groups>
+    </groups>
+    <test started-at="2021-03-29T16:09:40 EDT" name="Default test" finished-at="2021-03-29T16:10:58 EDT" duration-ms="77677">
+      <class name="variables.Firefox">
+        <test-method is-config="true" signature="opecBrowser()[pri:0, instance:variables.Firefox@bb9e6dc]" started-at="2021-03-29T16:09:40 EDT" name="opecBrowser" finished-at="2021-03-29T16:09:50 EDT" duration-ms="10030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opecBrowser -->
+        <test-method signature="getUrl()[pri:0, instance:variables.Firefox@bb9e6dc]" started-at="2021-03-29T16:09:50 EDT" name="getUrl" finished-at="2021-03-29T16:09:50 EDT" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:variables.Firefox@bb9e6dc]" started-at="2021-03-29T16:09:50 EDT" name="tearDown" finished-at="2021-03-29T16:10:58 EDT" duration-ms="67541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- variables.Firefox -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
