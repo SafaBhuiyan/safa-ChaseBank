@@ -1,4 +1,4 @@
-package com.instacart;
+package com.directLocators;
 
 import java.util.concurrent.TimeUnit;
 
