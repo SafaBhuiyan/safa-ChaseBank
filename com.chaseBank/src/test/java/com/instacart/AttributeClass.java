@@ -1,5 +1,8 @@
-package variables;
+package com.instacart;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -8,32 +11,27 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Chrome {
-
+public class AttributeClass {
+	
 	public WebDriver driver;
 
 	@BeforeTest
 	public void openBrowser() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get("https://www.chase.com/");
+		driver.get("https://www.instacart.com/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	@Test
-	public void getTitle() {
-
-		String title = driver.getTitle();
-		System.out.println("The Title is: " + title);
+	@Test()
+	public void loginPage() {
+		driver.findElement(By.className("rmq-731d2f0d")).click();
+	
 	}
 
-	@Test
-	public void geturl() {
-		String url = driver.getCurrentUrl();
-		System.out.println("The Url is: " + url);
-	}
-
-	@AfterTest
-	public void tearDown() {
+	@AfterTest(enabled = false)
+	public void finishTest() {
 		driver.quit();
 	}
 
