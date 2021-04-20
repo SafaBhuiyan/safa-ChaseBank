@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class AttributeClass {
+public class AttributeTagName {
 	
 	public WebDriver driver;
 
@@ -19,16 +19,15 @@ public class AttributeClass {
 	public void openBrowser() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get("https://www.instacart.com/");
+		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
 	@Test()
-	public void loginPage() {
-		driver.findElement(By.className("rmq-731d2f0d")).click();
-		
-	
+	public void sendKeyUsingTag() {
+		driver.findElement(By.tagName("input")).sendKeys("jjjj");
+
 	}
 
 	@AfterTest(enabled = false)

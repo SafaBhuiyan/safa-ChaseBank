@@ -11,8 +11,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class AttributeClass {
-	
+public class CssSelector {
 	public WebDriver driver;
 
 	@BeforeTest
@@ -25,9 +24,9 @@ public class AttributeClass {
 	}
 
 	@Test()
-	public void loginPage() {
-		driver.findElement(By.className("rmq-731d2f0d")).click();
-		
+	public void zipCodeUsingCss() {
+		driver.findElement(By.cssSelector("#address_line_1")).sendKeys("13215");
+		driver.findElement(By.cssSelector(".rmq-731d2f0d")).click();
 	
 	}
 

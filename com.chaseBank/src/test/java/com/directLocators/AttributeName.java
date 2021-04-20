@@ -28,6 +28,7 @@ public class AttributeName {
 	public void countrySelection() {
 		driver.findElement(By.name("country_alpha_2")).click();
 	
+	
 	}
 
 	@AfterTest(enabled = false)

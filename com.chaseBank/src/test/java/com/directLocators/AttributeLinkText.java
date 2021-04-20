@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class AttributeClass {
+public class AttributeLinkText {
 	
 	public WebDriver driver;
 
@@ -25,10 +25,15 @@ public class AttributeClass {
 	}
 
 	@Test()
-	public void loginPage() {
-		driver.findElement(By.className("rmq-731d2f0d")).click();
-		
+	public void iOS_linkText_test() {
+		driver.findElement(By.linkText("iOS")).click();
+		driver.navigate().back();
 	
+		
+	}
+	@Test
+	public void iOS_partial_LinkText() {
+		driver.findElement(By.partialLinkText("View all Job")).click();
 	}
 
 	@AfterTest(enabled = false)
