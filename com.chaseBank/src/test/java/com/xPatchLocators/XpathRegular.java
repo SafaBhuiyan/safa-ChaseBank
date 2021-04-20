@@ -28,7 +28,7 @@ public class XpathRegular {
 	public void regularXpath() {
 		driver.findElement(By.xpath("//input[@id='address_line_1']")).sendKeys("12315");
 		driver.findElement(By.xpath("//select[@name='country_alpha_2']")).click();
-driver.findElement(By.xpath("//button[@class='rmq-731d2f0d']")).click();
+		driver.findElement(By.xpath("//button[@class='rmq-731d2f0d']")).click();
 	}
 
 	@AfterTest(enabled = false)
