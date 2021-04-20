@@ -1,4 +1,4 @@
-package com.xPatchLocators;
+package com.xPathLocators;
 
 import java.util.concurrent.TimeUnit;
 
