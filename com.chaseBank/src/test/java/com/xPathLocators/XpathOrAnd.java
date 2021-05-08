@@ -24,7 +24,7 @@ public class XpathOrAnd {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	@Test()
+	@Test
 	public void orAndxPathTest() {
 		driver.findElement(By.xpath("//input[@id='address_line_1']")).sendKeys("13215");
 		driver.findElement(By.xpath("//button[@type='submit' or text()='Get started']")).click();

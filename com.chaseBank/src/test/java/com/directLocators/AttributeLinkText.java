@@ -24,7 +24,7 @@ public class AttributeLinkText {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	@Test()
+	@Test
 	public void iOS_linkText_test() {
 		driver.findElement(By.linkText("iOS")).click();
 		driver.navigate().back();

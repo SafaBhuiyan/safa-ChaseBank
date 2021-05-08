@@ -24,7 +24,7 @@ public class XpathRegular {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	@Test()
+	@Test
 	public void regularXpath() {
 		driver.findElement(By.xpath("//input[@id='address_line_1']")).sendKeys("12315");
 		driver.findElement(By.xpath("//select[@name='country_alpha_2']")).click();

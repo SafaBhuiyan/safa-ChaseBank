@@ -24,7 +24,7 @@ public class AttributeClass {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	@Test()
+	@Test
 	public void loginPage() {
 		driver.findElement(By.className("rmq-731d2f0d")).click();
 		

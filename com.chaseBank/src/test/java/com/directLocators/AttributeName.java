@@ -24,7 +24,7 @@ public class AttributeName {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	@Test()
+	@Test
 	public void countrySelection() {
 		driver.findElement(By.name("country_alpha_2")).click();
 	

@@ -24,7 +24,7 @@ public class XpathStartsWith {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	@Test()
+	@Test
 	public void startsWithXpath() {
 		driver.findElement(By.xpath("//button[starts-with(@class,'rmq')]")).click();
 		driver.findElement(By.xpath("(//input[starts-with(@id,'nextgen')])[1]")).sendKeys("uyehdhd");

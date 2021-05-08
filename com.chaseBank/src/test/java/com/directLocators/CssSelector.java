@@ -23,11 +23,12 @@ public class CssSelector {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	@Test()
+	@Test
 	public void zipCodeUsingCss() {
 		driver.findElement(By.cssSelector("#address_line_1")).sendKeys("13215");
-		driver.findElement(By.cssSelector(".rmq-731d2f0d")).click();
-	
+		//driver.findElement(By.cssSelector("button.rmq-731d2f0d")).click();
+		driver.findElement(By.cssSelector("button[class*='731d2f0d']")).click();
+	//driver.findElement(By.xpath("(//button[@class='rmq-731d2f0d' or @type='button'])[1]")).click();
 	}
 
 	@AfterTest(enabled = false)

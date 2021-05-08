@@ -23,9 +23,10 @@ public class XpathXesFollowing {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	@Test()
+	@Test
 	public void followingTest() {
 		driver.findElement(By.xpath("(//*[@class='css-1rf06g9'])[2]//following::ul/li[6]/a")).click();
+		
 		
 	}
 

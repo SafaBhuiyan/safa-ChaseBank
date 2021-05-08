@@ -24,7 +24,7 @@ public class AttributeTagName {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	@Test()
+	@Test
 	public void sendKeyUsingTag() {
 		driver.findElement(By.tagName("input")).sendKeys("jjjj");
 

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.xPatchLocators.XpathRegular">
+      <class name="com.selectPractice.SelectBasics">
         <methods>
-          <include name="regularXpath"/>
+          <include name="selectDropdown"/>
           <include name="openBrowser"/>
           <include name="finishTest"/>
         </methods>
-      </class> <!-- com.xPatchLocators.XpathRegular -->
+      </class> <!-- com.selectPractice.SelectBasics -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
