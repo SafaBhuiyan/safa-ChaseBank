@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Sprint">
+	<test name="s1">
+	<groups>
+		<define name="Sprint-1">
+			<include name="Sanity"></include>
+			<include name="Regression"></include>
+		</define>
+		<run>
+			<include name="Sprint-1"></include>
+		</run>
+	</groups>
+		<classes>
+			<class name="com.TestNGGroupDemo.GroupDemo1" />
+				<class name="com.TestNGGroupDemo.GroupDemo2" />
+					<class name="com.TestNGGroupDemo.GroupDemo3" />
+		</classes>
+	</test>
+	
+		<!--  <groups>
+		<define name="Sprint-1">
+			<include name="Sanity"></include>
+			<include name="Regression"></include>
+		</define>
+		<run>
+			<include name="Sprint-1"></include>
+		</run>
+	</groups>
+	<test name="s1">
+		<classes>
+			<class name="com.TestNGGroupDemo.GroupDemo1" />
+		</classes>
+	</test>
+	<test name="s2">
+		<classes>
+			<class name="com.TestNGGroupDemo.GroupDemo2" />
+		</classes>
+	</test>
+	<test name="s3">
+		<classes>
+			<class name="com.TestNGGroupDemo.GroupDemo3" />
+		</classes>
+	</test> -->
+	
+</suite>
